@@ -95,7 +95,7 @@ export default function Home() {
             backgroundPosition: "center",
           }}
         >
-          <div className="flex flex-col gap-8 justify-center items-start  max-w-[400px] self-start py-24 pl-12">
+          <div className="flex flex-col gap-8 justify-center items-start  max-w-[400px] self-start pt-8 pb-40 pl-12">
             <h2 className="font-bold text-4xl text-white leading-12">
               SARANA PRASARANA
             </h2>
