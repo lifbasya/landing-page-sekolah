@@ -65,12 +65,19 @@ export default function Home() {
             kedisiplinan, serta memiliki kepedulian dan tanggung jawab terhadap
             kelestarian lingkungan.
           </p>
-          <button className="flex items-center gap-3 text-lg font-medium p-3 w-fit border hover:bg-[#607459] hover:text-white transition-colors cursor-pointer">
+          <Link
+            href="/"
+            className="group flex items-center gap-3 text-lg font-medium p-3 w-fit border hover:bg-[#607459] hover:text-white transition-colors cursor-pointer"
+          >
             Selengkapnya
             <span>
-              <img src="/arrow.svg" />
+              <img
+                src="/arrow.svg"
+                alt="arrow"
+                className="transition group-hover:invert"
+              />
             </span>
-          </button>
+          </Link>
         </div>
 
         {/* Gambar menyesuaikan tinggi section */}
@@ -78,22 +85,52 @@ export default function Home() {
           <img src="/hero.png" className="" alt="Hero" />
         </div>
       </section>
-      <section className="w-full flex items-center mt-40 bg-[#607459]">
-        <div className="flex flex-col gap-7 justify-center items-start">
-          <h2 className="font-bold text-4xl text-white">SARANA PRASARANA</h2>
-          <p className="text-base font-medium text-white">SMA negeri kupang menyediakan berbagai sarana dan fasilitas pendukung untuk menunjang kenyamanan dan efektivitas proses pembelajaran para santri.</p>
-            <Link href="/" className="text-white font-semibold flex items-center gap-3">
-              lebih lanjut
-              <img src="/arrow.svg" alt="arrow" className="invert" />
-            </Link>
-          <div>
-            <p>Lapangan sekolah</p>
-            <div>
-              <div>
-                <img src="/fasilitas/lapangan.png" alt="Lapangan" className="w-full h-auto rounded-lg shadow-md" />
+      <section className="w-full flex items-center mt-40 bg-[#607459] min-h-[500px]">
+        <div
+          className="relative flex-1"
+          style={{
+            backgroundImage: "url('/pattern-2.png')",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover", // atau "cover" kalau mau penuh
+            backgroundPosition: "center",
+          }}
+        >
+          <div className="flex flex-col gap-8 justify-center items-start  max-w-[400px] self-start py-24 pl-12">
+            <h2 className="font-bold text-4xl text-white leading-12">
+              SARANA PRASARANA
+            </h2>
+            <p className="text-base font-medium text-white">
+              SMA negeri kupang menyediakan berbagai sarana dan fasilitas
+              pendukung untuk menunjang kenyamanan dan efektivitas proses
+              pembelajaran para santri.
+            </p>
+            <Link
+  href="/"
+  className="group flex items-center gap-3 text-base font-medium p-3 w-fit border hover:border-white hover:bg-white text-white hover:text-black transition-colors cursor-pointer"
+>
+  lebih lanjut
+  <span>
+    <img
+      src="/arrow.svg"
+      alt="arrow"
+      className="transition filter invert group-hover:invert-0"
+    />
+  </span>
+</Link>
+          </div>
+        </div>
+        <div
+          className="relative flex-1 py-63 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/sarana-1.png')" }}
+        >
+          <div className="absolute bottom-0 w-full flex justify-between items-center px-8 pb-6">
+            <p className="text-base font-medium text-white">Lapangan sekolah</p>
+            <div className="flex items-center gap-6">
+              <div className="border rounded-full p-3 border-white">
+                <img src="/light-arrow-left.svg" alt="light arrow" />
               </div>
-              <div>
-                <img src="/fasilitas/lapangan.png" alt="Lapangan" className="w-full h-auto rounded-lg shadow-md" />
+              <div className="border rounded-full p-3 border-white">
+                <img src="/light-arrow-right.svg" alt="light arrow" />
               </div>
             </div>
           </div>
