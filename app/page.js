@@ -54,8 +54,8 @@ export default function Home() {
   const [selected, setSelected] = useState(alumni[0]); // default Ahmad
 
   return (
-    <main className="w-full justify-center items-center flex flex-col py-10">
-      <section className="w-full flex justify-between items-center">
+    <main className="w-full justify-center items-center flex flex-col pt-36 pb-20 max-w-[1172px] mx-auto">
+      <section id="tentang" className="w-full flex justify-between items-center">
         <div className="flex flex-col gap-7 max-w-[494px] justify-center items-start">
           <h1 className="font-black text-5xl leading-14">
             SMA <span className="text-[#607459]">NEGERI</span> KUPANG
@@ -85,7 +85,7 @@ export default function Home() {
           <img src="/hero.png" className="" alt="Hero" />
         </div>
       </section>
-      <section className="w-full flex items-center mt-40 bg-[#607459] min-h-[500px]">
+      <section id="fasilitas" className="w-full flex items-center mt-40 bg-[#607459] min-h-[500px]">
         <div
           className="relative flex-1"
           style={{
@@ -136,7 +136,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="w-full flex flex-col items-center gap-16 mt-40">
+      <section id="metode" className="w-full flex flex-col items-center gap-16 mt-40">
         <div className="flex flex-col items-center justify-center gap-3">
           <h2 className="font-extrabold text-4xl">
             <span className="text-[#607459]">METODE</span> PEMBELAJARAN
@@ -164,7 +164,7 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section
+      <section  id="alumni"
         className="w-full flex items-center mt-40 bg-[#607459] py-18 px-14 relative"
         style={{
           backgroundImage: "url('/pattern.png')",
@@ -222,10 +222,10 @@ export default function Home() {
             </p>
           </div>
           <div className="flex gap-10">
-            <p className="font-medium text-base">TENTANG KAMI</p>
-            <p className="font-medium text-base">FASILITAS</p>
-            <p className="font-medium text-base">METODE PEMBELAJARAN</p>
-            <p className="font-medium text-base">ALUMNI</p>
+            <a href="#tentang" className="font-medium text-base">TENTANG KAMI</a>
+            <a href="#fasilitas" className="font-medium text-base">FASILITAS</a>
+            <a href="#metode" className="font-medium text-base">METODE PEMBELAJARAN</a>
+            <a href="#alumni" className="font-medium text-base">ALUMNI</a>
           </div>
         </div>
         <hr />
