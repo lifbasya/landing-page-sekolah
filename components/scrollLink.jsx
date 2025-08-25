@@ -5,7 +5,7 @@ import { smoothScroll } from "@/app/smoothScroll";
 export default function ScrollLink({ to, children, className }) {
   const handleClick = (e) => {
     e.preventDefault();
-    smoothScroll(to, 100, 400); // offset 100px, animasi 800ms
+    smoothScroll(to, 100, 200); // offset 100px, animasi 800ms
   };
 
   return (
