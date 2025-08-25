@@ -1,6 +1,6 @@
 "use client";
 
-export const smoothScroll = (selector, offset = 1, duration = 1) => {
+export const smoothScroll = (selector, offset = 80, duration = 800) => {
   const target = document.querySelector(selector);
   if (!target) return;
 
